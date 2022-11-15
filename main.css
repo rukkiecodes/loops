@@ -1,0 +1,88 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 98%;
+  padding: 1em;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  margin-bottom: 1em;
+}
+
+.listItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listItem .left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.listItem .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  flex: 1;
+}
+
+.listItem .right .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.listItem .right .left p {
+  margin: 0;
+  padding: 0;
+}
+
+.username {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.winsLosses, .rate {
+  font-size: .7rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button {
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  border-radius: 12px;
+  padding: .5em 1.2em;
+  outline: none;
+  background-color: #4169e1;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3559c5;
+}
